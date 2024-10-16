@@ -1,13 +1,13 @@
-from flask import Flask
+from flask import *
 
 # 创建Flask应用实例
 app = Flask(__name__)
-
+app.template_folder = '../templates'
 
 # 定义路由和视图函数
 @app.route('/')
-def hello_world():
-    return '各位向我看齐，我宣布个事儿：我是傻逼!'
+def menu():
+    return render_template('menu.html')
 
 
 if __name__ == '__main__':
