@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d6c9ea9-050f-429c-ae9f-43728c2e392b" name="更改" comment="初始化README文档结构，添加基本信息和标识">
-      <change afterPath="$PROJECT_DIR$/server/tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tools/chess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tools/flychess-map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tools/map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/icon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/menu-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/script/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+    <list default="true" id="5d6c9ea9-050f-429c-ae9f-43728c2e392b" name="更改" comment="浅浅地写了一点加载样式">
+      <change afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/404.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/menu-pc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/menu-plane-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/three.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/飞行棋.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/飞行棋.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/menu-loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/menu-loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/html/menu-mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/html/menu-mobile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/html/menu-pc.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/html/menu-pc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/menu-loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/menu-loading.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +30,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,104 +76,57 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask 服务器.Flask (api/server.py).executor&quot;: &quot;Run&quot;,
     &quot;Flask 服务器.Flask (server/server.py).executor&quot;: &quot;Run&quot;,
+    &quot;Flask 服务器.飞行棋服务器.executor&quot;: &quot;Run&quot;,
     &quot;HTTP 请求.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 调试.menu.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript 调试.menu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 调试.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 调试.twst.html.executor&quot;: &quot;Run&quot;,
     &quot;Python.flychess-map.executor&quot;: &quot;Run&quot;,
     &quot;Python.map.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
     &quot;Python.server.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/MyCode/飞行棋&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/MyCode/飞行棋/static/js&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;Python&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MyCode\飞行棋\static\js" />
+      <recent name="E:\MyCode\飞行棋\static\html" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyCode\飞行棋\static\html" />
+      <recent name="E:\MyCode\飞行棋\api" />
       <recent name="E:\MyCode\飞行棋\static" />
       <recent name="E:\MyCode\飞行棋\templates" />
-      <recent name="E:\MyCode\飞行棋\server\tools" />
-      <recent name="E:\MyCode\飞行棋\api" />
+      <recent name="E:\MyCode\飞行棋" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 调试.menu.html">
-    <configuration name="menu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/飞行棋/templates/menu.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="飞行棋" type="PythonConfigurationType" factoryName="Python">
-      <module name="飞行棋" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\MyCode\飞行棋\api\server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="flychess-map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="飞行棋" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/tools/flychess-map.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="飞行棋" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/tools/map.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+  <component name="RunManager" selected="Flask 服务器.飞行棋服务器">
+    <configuration name="menu-loading.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/飞行棋/static/html/menu-loading.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -181,12 +138,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\MyCode\飞行棋\api\server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,25 +152,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="飞行棋" type="Python.FlaskServer">
+    <configuration name="飞行棋服务器" type="Python.FlaskServer" temporary="true">
+      <option name="flaskDebug" value="true" />
       <module name="飞行棋" />
-      <option name="target" value="$PROJECT_DIR$/server/server.py" />
-      <option name="targetType" value="PATH" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Flask (server/server.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <module name="飞行棋" />
-      <option name="target" value="$PROJECT_DIR$/server/server.py" />
+      <option name="target" value="$PROJECT_DIR$/api/server.py" />
       <option name="targetType" value="PATH" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,23 +171,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript 调试.menu.html" />
-        <item itemvalue="Flask 服务器.Flask (server/server.py)" />
-        <item itemvalue="Python.flychess-map" />
-        <item itemvalue="Python.map" />
-        <item itemvalue="Python.server" />
+        <item itemvalue="Flask 服务器.飞行棋服务器" />
+        <item itemvalue="JavaScript 调试.menu-loading.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
-        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="5d6c9ea9-050f-429c-ae9f-43728c2e392b" name="更改" comment="" />
@@ -269,6 +211,68 @@
       <workItem from="1729044249354" duration="4513000" />
       <workItem from="1729067753931" duration="5832000" />
       <workItem from="1729075518278" duration="1042000" />
+      <workItem from="1729089983048" duration="1634000" />
+      <workItem from="1729254439752" duration="43000" />
+      <workItem from="1729254507161" duration="292000" />
+      <workItem from="1729254825775" duration="1464000" />
+      <workItem from="1729256836077" duration="3000" />
+      <workItem from="1729261886154" duration="3000" />
+      <workItem from="1729485204090" duration="1304000" />
+      <workItem from="1729486524233" duration="488000" />
+      <workItem from="1729487880870" duration="196000" />
+      <workItem from="1729488087388" duration="244000" />
+      <workItem from="1729488815108" duration="253000" />
+      <workItem from="1729499360636" duration="758000" />
+      <workItem from="1729500155499" duration="2051000" />
+      <workItem from="1729503356972" duration="1327000" />
+      <workItem from="1729522501168" duration="140000" />
+      <workItem from="1729522651283" duration="324000" />
+      <workItem from="1729522991243" duration="691000" />
+      <workItem from="1729568181936" duration="4129000" />
+      <workItem from="1729678335626" duration="2811000" />
+      <workItem from="1730119282064" duration="117000" />
+      <workItem from="1730976866814" duration="259000" />
+      <workItem from="1730977140764" duration="440000" />
+      <workItem from="1730977599049" duration="833000" />
+      <workItem from="1730978620796" duration="26000" />
+      <workItem from="1730978706476" duration="217000" />
+      <workItem from="1730978934060" duration="337000" />
+      <workItem from="1731036705767" duration="420000" />
+      <workItem from="1731037290964" duration="230000" />
+      <workItem from="1731037527640" duration="189000" />
+      <workItem from="1731037725797" duration="293000" />
+      <workItem from="1731038026464" duration="120000" />
+      <workItem from="1731038153848" duration="37000" />
+      <workItem from="1731038196952" duration="687000" />
+      <workItem from="1731039130119" duration="870000" />
+      <workItem from="1731117698819" duration="23000" />
+      <workItem from="1731211787481" duration="9000" />
+      <workItem from="1731227332850" duration="31000" />
+      <workItem from="1731227739867" duration="137000" />
+      <workItem from="1731227883849" duration="28000" />
+      <workItem from="1731227918388" duration="473000" />
+      <workItem from="1731228402694" duration="508000" />
+      <workItem from="1731228919782" duration="68000" />
+      <workItem from="1731228995269" duration="68000" />
+      <workItem from="1731320679092" duration="4000" />
+      <workItem from="1731469394691" duration="51000" />
+      <workItem from="1731647123862" duration="968000" />
+      <workItem from="1731648955566" duration="132000" />
+      <workItem from="1731649097667" duration="80000" />
+      <workItem from="1731649186827" duration="25000" />
+      <workItem from="1731649752866" duration="30000" />
+      <workItem from="1732171908774" duration="169000" />
+      <workItem from="1732173049095" duration="48000" />
+      <workItem from="1732173722241" duration="14000" />
+      <workItem from="1732189997145" duration="259000" />
+      <workItem from="1732191566225" duration="107000" />
+      <workItem from="1732250537245" duration="13000" />
+      <workItem from="1732255575244" duration="504000" />
+      <workItem from="1732256088654" duration="1010000" />
+      <workItem from="1732257108495" duration="965000" />
+      <workItem from="1732258608097" duration="5707000" />
+      <workItem from="1732264810725" duration="1022000" />
+      <workItem from="1732279752297" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="创建初始项目">
       <option name="closed" value="true" />
@@ -334,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728877994436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="浅浅地写了一点加载样式">
+      <option name="closed" value="true" />
+      <created>1732259465732</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732259465732</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,12 +402,16 @@
     <MESSAGE value="一次小测试，测试国内环境是否正确把DNS解析到vercel服务器" />
     <MESSAGE value="创建新项目" />
     <MESSAGE value="初始化README文档结构，添加基本信息和标识" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化README文档结构，添加基本信息和标识" />
+    <MESSAGE value="浅浅地写了一点加载样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="浅浅地写了一点加载样式" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/$server.coverage" NAME="server 覆盖结果" MODIFIED="1728745362540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$Flask__api_server_py_.coverage" NAME="Flask (api/server.py) 覆盖结果" MODIFIED="1729568708158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/$server.coverage" NAME="server 覆盖结果" MODIFIED="1732265811005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/$flychess_map.coverage" NAME="flychess-map 覆盖结果" MODIFIED="1729680110061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/tools" />
     <SUITE FILE_PATH="coverage/$map.coverage" NAME="map 覆盖结果" MODIFIED="1729048363775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/tools" />
-    <SUITE FILE_PATH="coverage/$flychess_map.coverage" NAME="flychess-map 覆盖结果" MODIFIED="1729067764649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/tools" />
+    <SUITE FILE_PATH="coverage/$scratch.coverage" NAME="scratch 覆盖结果" MODIFIED="1729680192078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/$Flask__server_server_py_.coverage" NAME="Flask (server/server.py) 覆盖结果" MODIFIED="1729072926415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="飞行棋服务器 覆盖结果" MODIFIED="1732280250857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

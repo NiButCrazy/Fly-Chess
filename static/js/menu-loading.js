@@ -14,6 +14,7 @@ const iframe_container = document.getElementById("iframe-container");
 
 // 加载完成回调函数
 function iframe_onload() {
+    document.title = "欢迎游玩";
     background_container.style.bottom = "-100%";
     loading_container.style.opacity = "0";
     loading_container.style.visibility = "hidden";
@@ -21,11 +22,16 @@ function iframe_onload() {
 }
 const menu_iframe = document.getElementById("iframe-container")
 menu_iframe.onload = iframe_onload
-setTimeout(()=>{
-    if (is_mobile()){
-        menu_iframe.src = "menu-mobile.html"
-    }else {
-        menu_iframe.src = "menu-pc.html"
-    }
-},2000)
+// setTimeout(()=>{
+//     if (is_mobile()){
+//         menu_iframe.src = "menu-mobile.html"
+//     }else {
+//         menu_iframe.src = "menu-pc.html"
+//     }
+// },2000)
+if (is_mobile()){
+    menu_iframe.src = "../html/menu-mobile.html"
+}else {
+    menu_iframe.src = "../html/menu-pc.html"
+}
 
