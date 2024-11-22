@@ -51,5 +51,5 @@ for i in map_data:
 	text = str(index_Y)
 	if index_Y <= 9:
 		text = '0' + text
-	print(text + str(i))
+	print(text + " ".join(i))
 	index_Y += 1
