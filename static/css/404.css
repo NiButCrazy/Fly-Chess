@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   width: 100vw;
@@ -423,7 +424,7 @@ body {
   height: 3px;
 }
 .star:nth-child(15) {
-  top: 0vh;
+  top: 0;
   left: 92vw;
 }
 .star:nth-child(15):before,
@@ -505,7 +506,7 @@ body {
 }
 .star:nth-child(18) {
   top: 57vh;
-  left: 0vw;
+  left: 0;
 }
 .star:nth-child(18):before,
 .star:nth-child(18):after {
@@ -586,7 +587,7 @@ body {
 }
 .star:nth-child(21) {
   top: 1vh;
-  left: 0vw;
+  left: 0;
 }
 .star:nth-child(21):before,
 .star:nth-child(21):after {
@@ -612,7 +613,7 @@ body {
   height: 6px;
 }
 .star:nth-child(22) {
-  top: 0vh;
+  top: 0;
   left: 54vw;
 }
 .star:nth-child(22):before,
@@ -2215,19 +2216,19 @@ body {
   width: 550px;
   height: 550px;
   background-image: linear-gradient(to right bottom, #802b89, #5631a1);
-  box-shadow: 0px 0px 20px -8px #000;
+  box-shadow: 0 0 20px -8px #000;
 }
 .circle--inner {
   width: 355px;
   height: 355px;
   background-image: linear-gradient(to right bottom, #75278b, #5530a2);
-  box-shadow: 0px 0px 20px -8px #000;
+  box-shadow: 0 0 20px -8px #000;
 }
 .four {
   position: absolute;
   font-size: 150px;
   font-weight: 900;
-  text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2318,7 +2319,7 @@ body {
   height: 66px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0px 5px 1px -3px #808080;
+  box-shadow: 0 5px 1px -3px #808080;
   transform: translateX(-50%);
   z-index: 3;
   overflow: hidden;
@@ -2389,7 +2390,7 @@ body {
 }
 .planet {
   background-color: #ff4980;
-  box-shadow: inset -6px -10px 0px 1px #cc3b6b, 0px 2px 10px rgba(0,0,0,0.4);
+  box-shadow: inset -6px -10px 0 1px #cc3b6b, 0 2px 10px rgba(0,0,0,0.4);
   width: 155px;
   height: 155px;
 }

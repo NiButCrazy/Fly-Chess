@@ -10,7 +10,7 @@ app.template_folder = '../templates'
 def static_resource(filename):
     try:
         return send_from_directory('../static', filename)
-    except:
+    except Exception:
         return send_from_directory('../static/html/', '404.html')
 
 # 定义路由和视图函数

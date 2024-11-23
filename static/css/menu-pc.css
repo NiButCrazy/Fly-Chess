@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*背景图片*/
 #world {
     position: absolute;
@@ -11,3 +12,255 @@
     background: linear-gradient(#e4e0ba, #f7d9aa);
     /*background: linear-gradient(#000814, #280270);*/
 }
+
+/*菜单通用按钮*/
+.menu-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 15px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 25px;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+#button-play {
+    top: 50px;
+    left: 50px;
+}
+
+.menu-button:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+}
+
+.menu-button svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.play {
+    bottom: 1px;
+    position: relative;
+    transition: all 0.5s ease;
+    transition-delay: .3s;
+}
+
+.menu-button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.menu-button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+.menu-button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+#button-setting {
+    top: 130px;
+    left: 50px;
+}
+
+/*右上角更多按钮*/
+ul {
+    list-style: none;
+}
+
+.more {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more .icon-content {
+    margin: 0 5px;
+    position: relative;
+}
+.more .icon-content .tooltip {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    transition-delay: 0s;
+    text-align: center;
+    min-width: 30px;
+}
+
+.more .icon-content:hover .tooltip {
+    opacity: .8;
+    visibility: visible;
+    top: 60px;
+
+    transition-delay: .3s;
+}
+.more .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+}
+.more .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0 rgb(0 0 0 / 12%);
+}
+.more .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+.more .icon-content a:hover {
+    color: white;
+}
+.more .icon-content a .filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.more .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.more .icon-content a .filled,
+.more .icon-content a ~ .tooltip {
+    background-color: #24262a;
+}
+
+/*深色模式切换按钮*/
+#themeToggle-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    right: 170px;
+    top: 33px;
+    transform: scale(2);
+}
+
+
+.themeToggle {
+    color: #bbb;
+    width: 3em;
+}
+
+.st-sunMoonThemeToggleBtn {
+    position: relative;
+    cursor: pointer;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput {
+    opacity: 0;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.st-sunMoonThemeToggleBtn svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+    transform: rotate(40deg);
+}
+
+.st-sunMoonThemeToggleBtn svg .sunMoon {
+    transform-origin: center center;
+    transition: inherit;
+    transform: scale(1);
+    color: #404ddf;
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay {
+    transform-origin: center center;
+    transform: scale(0);
+
+}
+
+.st-sunMoonThemeToggleBtn svg mask > circle {
+    transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+    transform: translate(0px, 0px);
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay2 {
+    animation-delay: 0.05s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay3 {
+    animation-delay: 0.1s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay4 {
+    animation-delay: 0.17s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay5 {
+    animation-delay: 0.25s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay5 {
+    animation-delay: 0.29s !important;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg {
+    transform: rotate(90deg);
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg mask > circle {
+    transform: translate(16px, -3px);
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunMoon {
+    transform: scale(0.55);
+    color: #f69d65;
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunRay {
+    animation: showRay1832 0.4s ease 0s 1 forwards;
+    color: #f6c365;
+}
+
+@keyframes showRay1832 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+

@@ -1,4 +1,3 @@
-import {background_svg} from "./background-svg.js";
 function is_mobile() {
     // 判断是否为移动设备打开
     return !!(navigator.userAgent.match(/Mobi/i) ||
@@ -7,7 +6,7 @@ function is_mobile() {
 }
 // 设定背景图片
 const background_container = document.getElementById("background-svg-container");
-background_container.innerHTML = background_svg;
+
 // 加载圆圈
 const loading_container = document.getElementById("loading");
 const iframe_container = document.getElementById("iframe-container");
@@ -22,13 +21,6 @@ function iframe_onload() {
 }
 const menu_iframe = document.getElementById("iframe-container")
 menu_iframe.onload = iframe_onload
-// setTimeout(()=>{
-//     if (is_mobile()){
-//         menu_iframe.src = "menu-mobile.html"
-//     }else {
-//         menu_iframe.src = "menu-pc.html"
-//     }
-// },2000)
 if (is_mobile()){
     menu_iframe.src = "../html/menu-mobile.html"
 }else {
