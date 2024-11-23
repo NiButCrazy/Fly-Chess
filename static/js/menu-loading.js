@@ -19,11 +19,11 @@ function iframe_onload() {
     loading_container.style.visibility = "hidden";
     iframe_container.style.bottom = "0";
 }
-const menu_iframe = document.getElementById("iframe-container")
-menu_iframe.onload = iframe_onload
+
+iframe_container.onload = iframe_onload
 if (is_mobile()){
-    menu_iframe.src = "../html/menu-mobile.html"
+    iframe_container.src = "../html/menu-mobile.html"
 }else {
-    menu_iframe.src = "../html/menu-pc.html"
+    iframe_container.src = "../html/menu-pc.html"
 }
 
