@@ -2,7 +2,7 @@ var Colors = {
     red:0xf25346,
     yellow:0xedeb27,
     white:0xd8d0d1,
-    // white:0x7870d1,
+    // white:0x9890d1,
     brown:0x59332e,
     pink:0xF5986E,
     brownDark:0x23190f,
@@ -14,7 +14,45 @@ var Colors = {
     // lightgreen:0x022225
 };
 
+const theme_btn = document.getElementById('themeToggle');
+const world = document.getElementById('world');
+const menu_btn_list = document.querySelectorAll('.menu-button');
+const about_card = document.getElementById('about-card');
 
+
+
+var matTreeLeaves_list = []; // 树叶的材质
+var plane_material_list = []; // 飞机的材质
+async function change_leaves_color(color) {
+    matTreeLeaves_list.forEach(matTreeLeaves => {
+        matTreeLeaves.material.color.set(color);
+    })
+}
+theme_btn.addEventListener('click', function(){
+    press_sound.play()
+    if (!theme_btn.checked){
+        // 进入深色模式
+        scene.fog = new THREE.Fog(0x303daf, 200, 950);
+        world.style.background = 'linear-gradient(#000814, #280270)';
+        about_card.style.background = 'linear-gradient(43deg, rgb(200, 80, 192) 20%, rgb(112, 141, 255) 100%)';
+        land.mesh.material.color.set(0x022225);
+        change_leaves_color(0x04120);
+        plane_material_list.forEach(plane_material => {plane_material.color.set(0x9890d1)})
+        menu_btn_list.forEach(menu_btn => {menu_btn.classList.add('dark')})
+        document.body.classList.add('dark')
+    }else {
+        // 进入亮色模式
+        scene.fog = new THREE.Fog(0xf7d9aa, 100, 950);
+        world.style.background = 'linear-gradient(#e4e0ba, #f7d9aa)';
+        about_card.style.background = 'linear-gradient(43deg, rgb(200, 80, 192) 20%, rgb(255, 204, 112) 100%)';
+        land.mesh.material.color.set(0x629265);
+        change_leaves_color(0x458248);
+        plane_material_list.forEach(plane_material => {plane_material.color.set(0xd8d0d1)})
+        menu_btn_list.forEach(menu_btn => {menu_btn.classList.remove('dark')})
+        document.body.classList.remove('dark')
+    }
+
+})
 
 var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container;
 
@@ -28,10 +66,9 @@ function createScene() {
 
     // Create the scene.
     scene = new THREE.Scene();
-
     // Add FOV Fog effect to the scene. Same colour as the BG int he stylesheet.
     scene.fog = new THREE.Fog(0xf7d9aa, 100, 950);
-    // scene.fog = new THREE.Fog(0xa0b751, 200, 950);
+    // scene.fog = new THREE.Fog(0x303daf, 200, 950);
 
     // Create the camera
     aspectRatio = WIDTH / HEIGHT;
@@ -70,6 +107,7 @@ function createScene() {
     window.addEventListener('resize', handleWindowResize, false);
 }
 
+
 //RESPONSIVE FUNCTION
 function handleWindowResize() {
     HEIGHT = window.innerHeight;
@@ -79,6 +117,21 @@ function handleWindowResize() {
     camera.updateProjectionMatrix();
 }
 
+function createStars(numStars) {
+    const geometry = new THREE.Geometry();
+    for (let i = 0; i < numStars; i++) {
+        const star = new THREE.Vector3(
+            (Math.random() - 0.5) * 2000,
+            (Math.random() - 0.5) * 2000,
+            (Math.random() - 0.5) * 1000
+        );
+        geometry.vertices.push(star);
+    }
+
+    const material = new THREE.PointsMaterial({ color: 0xffffff, size: 2 });
+    const stars = new THREE.Points(geometry, material);
+    return stars
+}
 
 var hemispshereLight, shadowLight;
 
@@ -87,8 +140,6 @@ function createLights(){
     hemisphereLight = new THREE.HemisphereLight(0xaaaaaa,0x000000, .9)
     // Parallel rays
     shadowLight = new THREE.DirectionalLight(0xffffff, .9);
-
-
 
     shadowLight.position.set(0,350,350);
     shadowLight.castShadow = true;
@@ -133,11 +184,11 @@ Orbit = function(){
     var geom =new THREE.Object3D();
 
     this.mesh = geom;
+    this.mesh.add(createStars(600))
     //this.mesh.add(sun);
 }
 
 Sun = function(){
-
     this.mesh = new THREE.Object3D();
 
     var sunGeom = new THREE.SphereGeometry( 400, 20, 10 );
@@ -178,6 +229,8 @@ Cloud = function(){
         m.scale.set(s,s,s);
         this.mesh.add(m);
     }
+
+    // this.mesh.add(createStars(500))
 }
 
 Sky = function(){
@@ -251,6 +304,9 @@ Tree = function () {
     treeLeaves3.receiveShadow = true;
     this.mesh.add(treeLeaves3);
 
+    matTreeLeaves_list.push(treeLeaves1)
+    matTreeLeaves_list.push(treeLeaves2)
+    matTreeLeaves_list.push(treeLeaves3)
 }
 
 Flower = function () {
@@ -395,6 +451,7 @@ var AirPlane = function() {
     engine.castShadow = true;
     engine.receiveShadow = true;
     this.mesh.add(engine);
+    plane_material_list.push(matEngine)
 
     // Create the tail
     var geomTailPlane = new THREE.BoxGeometry(15,20,5,1,1,1);
@@ -430,6 +487,7 @@ var AirPlane = function() {
     windshield.receiveShadow = true;
 
     this.mesh.add(windshield);
+    plane_material_list.push(matWindshield)
 
     var geomPropeller = new THREE.BoxGeometry(20,10,10,1,1,1);
     geomPropeller.vertices[4].y-=5;
@@ -468,6 +526,7 @@ var AirPlane = function() {
     var wheelProtecR = new THREE.Mesh(wheelProtecGeom,wheelProtecMat);
     wheelProtecR.position.set(25,-20,25);
     this.mesh.add(wheelProtecR);
+    plane_material_list.push(wheelProtecMat)
 
     var wheelTireGeom = new THREE.BoxGeometry(24,24,4);
     var wheelTireMat = new THREE.MeshPhongMaterial({color:Colors.brownDark, shading:THREE.FlatShading});
@@ -765,7 +824,7 @@ function init(event) {
     createLand();
     createForest();
     createSky();
-    //createFox();
+    // createFox();
 
     document.addEventListener('mousemove', handleMouseMove, false);
 
