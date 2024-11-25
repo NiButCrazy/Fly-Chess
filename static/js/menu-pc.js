@@ -1,4 +1,4 @@
-import {ConfirmDialogBox, PromptDialogBox, InputDialogBox, WarnDialogBox} from './dialog-box.js'
+import {PromptDialogBox} from './dialog-box.js'
 new PromptDialogBox('欢迎游玩飞行棋','首次见面')
 // 顶层打开的UI
 let top_open_ui = null;
@@ -35,10 +35,13 @@ fetch('../../CHANGELOG.md')
 // 硬性滚动内容
 const canvas_container = document.querySelector('.canvas');
 canvas_container.addEventListener('wheel', event=> {about_title.scrollTop += event.deltaY;})
-
+// 关于卡片的容器
 const  about_container = document.querySelector('.about-container');
+// 关于按钮
+const about_btn = document.getElementById('about-btn');
 // 绑定一个隐藏关于卡片的函数
 function toggle_about_card() {about_container.classList.toggle('hidden');}
+about_btn.addEventListener('click', toggle_about_card)
 // noinspection JSUnusedLocalSymbols
 about_container.addEventListener('click', event=> {toggle_about_card()})
 
