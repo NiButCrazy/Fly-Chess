@@ -1,3 +1,5 @@
+import {ConfirmDialogBox, PromptDialogBox, InputDialogBox, WarnDialogBox} from './dialog-box.js'
+new PromptDialogBox('欢迎游玩飞行棋','首次见面')
 // 顶层打开的UI
 let top_open_ui = null;
 // 按钮hover音效
@@ -7,7 +9,10 @@ const press_sound = document.getElementById('press-sound');
 press_sound.volume = 0.2;
 // 背景音乐
 const bg_music = document.getElementById('bg-music');
+
 bg_music.volume = 0.5;
+// 版本号
+const prompt = document.getElementById('prompt');
 // 更新日志容器
 const about_title = document.getElementById('about-title');
 fetch('../../CHANGELOG.md')
@@ -16,7 +21,11 @@ fetch('../../CHANGELOG.md')
         // 使用 marked 解析 Markdown 文本
         // 将解析后的 HTML 插入到容器中
         // noinspection JSUnresolvedReference
-        about_title.innerHTML = marked.parse(text);
+        const new_html = marked.parse(text);
+        // 使用正则表达式匹配第一个版本格式的字符串
+        prompt.innerHTML = new_html.match(/\[(.*?)]/)[1]
+        // noinspection JSUnresolvedReference
+        about_title.innerHTML = new_html
     })
     .catch(error => {
         console.error('Error fetching or parsing the Markdown file:', error);

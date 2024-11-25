@@ -19,6 +19,9 @@ const world = document.getElementById('world');
 const menu_btn_list = document.querySelectorAll('.menu-button');
 const about_card = document.getElementById('about-card');
 
+// 按钮按下音效
+const press_sound = document.getElementById('press-sound');
+
 
 
 var matTreeLeaves_list = []; // 树叶的材质

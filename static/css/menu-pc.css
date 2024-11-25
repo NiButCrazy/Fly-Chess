@@ -683,13 +683,13 @@ ul {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
 }
-
+/* 通用菜单容器 */
 .menu-container {
     position: absolute;
     left: calc(50% - 300px);
     top: calc(50% - 200px);
     background-color: var(--background-color-main);
-    border: 4px solid var(--border-color);
+    border: 6px solid var(--border-color);
     border-radius: 20px;
     transition: all .8s, opacity 0.5s;
 }

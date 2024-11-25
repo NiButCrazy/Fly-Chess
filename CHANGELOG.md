@@ -2,6 +2,17 @@
 
 *日志使用 [Simple Changelog 汉化版](https://github.com/NiButCrazy/simple-changelog-Chinese) 生成*
 
+## [0.0.3-beta] - 2024-11-25
+### 新增内容
+- 添加dialog模块，完成了输入、警告、确定、提示四种dialog
+
+### 作出更改
+- 把press音效添加到menu-plane-bg.js里防止意外无法加载
+
+### 不推荐使用功能
+- 绝对不要在生产环境使用test名字有关的文件，这只是测试环境使用
+
+
 ## [0.0.2-beta] - 2024-11-24
 ### 新增内容
 - 添加了设置选项
