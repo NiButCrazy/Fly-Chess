@@ -1,13 +1,37 @@
 .dialog-close {
-    cursor: none;
     opacity: 0;
     pointer-events: none;
 }
+.dialog-close .warn_dialog_box,
+.dialog-close .input_dialog_box,
+.dialog-close .dialog-mask{
+    pointer-events: none;
+}
+/* 遮罩层容器 */
+.dialog-mask-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease;
+    z-index: 97;
+}
+/* 遮罩层 */
+.dialog-mask {
+    pointer-events: auto;
+    background-color: black;
+    opacity: .3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 97;
+    transition: opacity 0.2s ease;
+}
 /* 警告框 && 确认框 && 提示框 */
 .warn_dialog_box {
+    pointer-events: auto;
     position: absolute;
     width: 320px;
-    border: 4px solid #000;
+    border: 4px solid var(--border-color, #000);
     padding: 1.5rem;
     background-color: var(--background-color-main, #fff);
     box-shadow: 10px 10px 0 #000;
@@ -151,11 +175,12 @@
 
 /* 输入框 */
 .input_dialog_box {
+    pointer-events: auto;
     position: absolute;
     width: 300px;
     padding: 20px;
     background: var(--background-color-main, #fff);
-    border: 6px solid #000;
+    border: 6px solid var(--border-color, #000);
     box-shadow: 12px 12px 0 #000;
     transition: transform 0.3s, box-shadow 0.3s, opacity 0.2s, background-color .5s;
     z-index: 98;
@@ -164,7 +189,7 @@
     transform: translateY(calc(-50% - 20px));
 }
 
-.input_dialog_box:hover {
+.input_dialog_box:hover, .input_dialog_box:focus-within {
     transform: translate(-5px, calc(-50% - 25px));
     box-shadow: 17px 17px 0 #000;
 }
@@ -192,7 +217,7 @@
     transition: transform 0.3s;
 }
 
-.input_dialog_box:hover .input_dialog_box__title::after {
+.input_dialog_box:hover .input_dialog_box__title::after, .input_dialog_box:focus-within .input_dialog_box__title::after {
     transform: translateX(0);
 }
 
@@ -287,4 +312,24 @@
 
 .glitch {
     animation: glitch 0.3s infinite;
+}
+
+/* 时间选择框 */
+.time-selected {
+    font-size: 25px;
+    font-family: "Arial Black", cursive;
+    border: none;
+    background-color: rgba(75,143,243,0);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 5px;
+    cursor: pointer;
+    appearance: none;
+}
+.time-selected:focus-visible {
+    outline: none;
+
+}
+input::selection {
+    background-color: rgba(132, 132, 132, 0.51);
 }

@@ -2,6 +2,15 @@
 
 *日志使用 [Simple Changelog 汉化版](https://github.com/NiButCrazy/simple-changelog-Chinese) 生成*
 
+## [0.0.4-beta] - 2024-11-27
+### 新增内容
+- 实现了设置里所有功能的函数
+- 添加了开始游戏容器里的部分内容
+
+### 作出更改
+- 404页面添加view以适配手机端尺寸
+
+
 ## [0.0.3-beta] - 2024-11-25
 ### 新增内容
 - 添加dialog模块，完成了输入、警告、确定、提示四种dialog

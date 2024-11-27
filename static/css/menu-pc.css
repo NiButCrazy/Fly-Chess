@@ -917,6 +917,7 @@ ul {
     gap: 30px;
     width: 50px;
     height: 20px;
+    cursor: pointer;
     right: 105px;
 }
 
@@ -977,4 +978,161 @@ ul {
 }
 .selected {
     border-width: 3px;
+}
+/* 音量控制条 */
+.volume-slider {
+    /* slider */
+    --slider-width: 100%;
+    --slider-height: 50px;
+    --slider-bg: rgb(255, 255, 255);
+    --slider-border-radius: 9px;
+    /* level */
+    --level-color: #fff;
+    --level-transition-duration: 0.1s;
+    /* icon */
+    --icon-margin: 15px;
+    --icon-color: var(--slider-bg);
+    --icon-size: 25px;
+}
+
+.volume-slider {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: -110px;
+    top: 242px;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.volume-slider.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.volume-slider .volume {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: var(--icon-margin);
+    color: var(--icon-color);
+    width: var(--icon-size);
+    height: auto;
+    position: absolute;
+    left: -20px;
+    pointer-events: none;
+}
+
+.volume-slider .volume-level {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    background: rgba(0, 0, 0, 0.49);
+    overflow: hidden;
+    border-radius: var(--slider-border-radius);
+    -webkit-transition: height var(--level-transition-duration);
+    -o-transition: height var(--level-transition-duration);
+    transition: height var(--level-transition-duration);
+    cursor: inherit;
+    transform: rotate(270deg);
+    opacity: .8;
+    pointer-events: auto;
+}
+
+.volume-slider .volume-level::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    -webkit-box-shadow: -200px 0 0 200px var(--level-color);
+    box-shadow: -200px 0 0 200px var(--level-color);
+}
+.volume-slider .volume-level::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: -200px 0 0 200px var(--level-color);
+}
+/* 创建房间按钮 */
+#create-room-btn {
+    position: absolute;
+
+}
+/* 房间加载 */
+.room-loader {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    left: calc(50% - 60px);
+    top: 50%;
+    display: none;
+}
+
+.room-loader:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: var(--input-focus);
+    animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.room-loader:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+    animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+    0% {
+        transform: scale(1, 0.7);
+    }
+
+    40% {
+        transform: scale(0.8, 1.2);
+    }
+
+    60% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        bottom: 140px;
+    }
+}
+
+@keyframes loading-step {
+    0% {
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+        0 10px 0 #f2f2f2,
+        -35px 50px 0 #f2f2f2,
+        -70px 90px 0 #f2f2f2;
+    }
+
+    100% {
+        box-shadow: 0 10px 0 #f2f2f2,
+        -35px 50px 0 #f2f2f2,
+        -70px 90px 0 #f2f2f2,
+        -70px 90px 0 rgba(0, 0, 0, 0);
+    }
 }
