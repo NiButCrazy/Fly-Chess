@@ -1,5 +1,16 @@
 {
     "rewrites": [
         { "source": "/(.*)", "destination": "/api/server" }
+    ],
+    "headers": [
+        {
+            "source": "/static/html/menu-loading.html",
+            "headers" : [
+                {
+                    "key" : "Cache-Control",
+                    "value" : "public, max-age=14400"
+                }
+            ]
+        }
     ]
 }
