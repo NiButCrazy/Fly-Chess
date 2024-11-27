@@ -1,5 +1,6 @@
-import {PromptDialogBox, InputDialogBox, WarnDialogBox, ConfirmDialogBox} from './dialog-box.js'
+import {PromptDialogBox, ConfirmDialogBox} from './dialog-box.js'
 const welcome = new PromptDialogBox('欢迎游玩飞行棋','初次见面')
+// noinspection JSUnusedLocalSymbols
 welcome.bind_confirm(event => {
     if (bg_music_state === 'true'){
         bg_music.play()
@@ -106,10 +107,17 @@ const volume_control = document.getElementById('volume-control');
  * @type {HTMLInputElement}
  */
 const volume_level = document.getElementById('volume-level');
-volume_level.value = JSON.parse(localStorage.getItem('bg_music_volume')) * 100 + "" || '50';
+const local_bg_music_volume = JSON.parse(localStorage.getItem('bg_music_volume'))
+if (local_bg_music_volume){
+    volume_level.value = local_bg_music_volume* 100  + "";
+}else {
+    volume_level.value = '50'
+}
+// noinspection JSUnusedLocalSymbols
 volume_level.addEventListener('input', event=> {
     bg_music.volume = volume_level.value / 100;
 })
+// noinspection JSUnusedLocalSymbols
 volume_level.addEventListener('change', event=> {
     const bg_music_volume = volume_level.value / 100 + '';
     localStorage.setItem('bg_music_volume', bg_music_volume);
@@ -210,6 +218,7 @@ toggle_auto_night_btn.addEventListener('click', event=> {
             undefined,
             ['取消', '更改']
         )
+        // noinspection JSUnusedLocalSymbols
         time_selected.bind_confirm(event => {
             const setting_auto_dark_time = [
                 document.getElementById('appointment-time1').value,
@@ -221,6 +230,7 @@ toggle_auto_night_btn.addEventListener('click', event=> {
 
             time_selected.close()
         })
+        // noinspection JSUnusedLocalSymbols
         time_selected.bind_cancel(event => {
             toggle_auto_night_btn.checked = false
             time_selected.close()
@@ -251,6 +261,7 @@ if (is_auto_dark_time === 'true'){
  * @type {HTMLInputElement} */
 const player_name = document.getElementById('player-name')
 player_name.value = localStorage.getItem('player_name') || ''
+// noinspection JSUnusedLocalSymbols
 player_name.addEventListener('blur', event=>{
     localStorage.setItem('player_name', player_name.value)
 })

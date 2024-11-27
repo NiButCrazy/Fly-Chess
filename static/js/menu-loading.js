@@ -21,9 +21,10 @@ function iframe_onload() {
 }
 
 iframe_container.onload = iframe_onload
+// 添加timestamp是为了防止缓存
 if (is_mobile()){
-    iframe_container.src = "../html/menu-mobile.html"
+    iframe_container.src = "../html/menu-mobile.html?timestamp=" + new Date().getTime();
 }else {
-    iframe_container.src = "../html/menu-pc.html"
+    iframe_container.src = "../html/menu-pc.html?timestamp=" + new Date().getTime();
 }
 
