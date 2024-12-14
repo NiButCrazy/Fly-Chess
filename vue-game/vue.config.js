@@ -8,5 +8,6 @@ module.exports = defineConfig({
       })
       return definitions
     })
-  }
+  },
+  lintOnSave: false
 })

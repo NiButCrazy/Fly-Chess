@@ -1,21 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld/>
+    <Game></Game>
+    <Ui></Ui>
 </template>
 
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Game from "./components/GameContainer.vue";
+import Ui from "./components/UiContainer.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        Ui,
+        Game
+    }
 }
-</script>
 
-<style>
-#app1 {
-  margin-top: 50px;
-}
-</style>
+
+</script>
