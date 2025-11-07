@@ -8,10 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d6c9ea9-050f-429c-ae9f-43728c2e392b" name="更改" comment="feat:添加了老纪play">
+    <list default="true" id="5d6c9ea9-050f-429c-ae9f-43728c2e392b" name="更改" comment="fix:修复了路径问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dog/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/dog/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/html/dog.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/html/dog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +409,7 @@
       <workItem from="1742456062903" duration="64000" />
       <workItem from="1742739381609" duration="187000" />
       <workItem from="1751278190806" duration="252000" />
-      <workItem from="1762511084499" duration="3781000" />
+      <workItem from="1762511084499" duration="4116000" />
     </task>
     <task id="LOCAL-00001" summary="创建初始项目">
       <option name="closed" value="true" />
@@ -556,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762513308692</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix:修复了路径问题">
+      <option name="closed" value="true" />
+      <created>1762516043556</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1762516043556</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +634,8 @@
     <MESSAGE value="为menu-loading.html添加缓存响应头，提高加载速度" />
     <MESSAGE value="决定引入vue来进行游戏开发" />
     <MESSAGE value="feat:添加了老纪play" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:添加了老纪play" />
+    <MESSAGE value="fix:修复了路径问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:修复了路径问题" />
   </component>
   <component name="VueSettings">
     <option name="packageName" value="E:\MyCode\飞行棋\vue-game" />
@@ -635,7 +643,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$map.coverage" NAME="map 覆盖结果" MODIFIED="1733909607714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/tools" />
     <SUITE FILE_PATH="coverage/$scratch.coverage" NAME="scratch 覆盖结果" MODIFIED="1729680192078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/nbc_app$.coverage" NAME="飞行棋服务器 覆盖结果" MODIFIED="1762515431864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nbc_app$.coverage" NAME="飞行棋服务器 覆盖结果" MODIFIED="1762516008995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$Flask__server_server_py_.coverage" NAME="Flask (server/server.py) 覆盖结果" MODIFIED="1729072926415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$server.coverage" NAME="server 覆盖结果" MODIFIED="1742455791361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/$flychess_map.coverage" NAME="flychess-map 覆盖结果" MODIFIED="1733909620249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/tools" />

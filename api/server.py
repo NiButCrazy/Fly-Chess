@@ -12,6 +12,13 @@ def static_resource(filename):
     except Exception:
         return send_from_directory('../static/html/', '404.html')
 
+@app.route('/images/<path:filename>')
+def images(filename):
+    try:
+        return send_from_directory('../static/images', filename)
+    except Exception:
+        return send_from_directory('../static/html/', '404.html')
+
 @app.route('/CHANGELOG.md')
 def changelog():
     return send_from_directory('../', 'CHANGELOG.md')
