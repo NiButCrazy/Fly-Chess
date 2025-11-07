@@ -14,6 +14,8 @@
 
 <script>
 
+// 大香蕉
+
 import Game from "./components/GameContainer.vue";
 import Ui from "./components/UiContainer.vue";
 

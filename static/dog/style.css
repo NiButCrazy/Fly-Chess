@@ -1,0 +1,79 @@
+body {
+    background-color: #f1d5da; /* 不要 */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 0px;
+}
+
+/* 不要 */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 不要 */
+#mainImage {
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+/* 不要 */
+h1 {
+    font-size: 28px;
+    color: #68495b;
+}
+
+.avvv{
+	position:fixed;
+	width:90%;
+	margin-left:5%;
+	font-size:1.25rem;
+	color:#fff;
+	text-align:center;
+	padding:1rem 0;
+	border-radius:0.5rem;
+	background-color:#cc33ff;
+	bottom:0.4rem;
+}
+/* 不要 */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#25 {
+    background-color: #d4818e; /* 不要 */
+    color: white;
+}
+#yes {
+    background-color: #d4818e; /* 不要 */
+    color: white;
+}
+
+#no {
+    background-color: #6784b1; /* 不要 */
+    color: white;
+    position: relative;
+}
+
+/* 不要 */
+.yes-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffdae0; /* 不要 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

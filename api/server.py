@@ -22,6 +22,10 @@ def changelog():
 def menu():
     return send_from_directory('../static/html/', 'menu-loading.html')
 
+# 定义路由和视图函数
+@app.route('/xiaogou')
+def dog():
+    return send_from_directory('../static/html/', 'dog.html')
 
 if __name__ == '__main__':
     # 启动Flask内置的开发服务器

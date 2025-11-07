@@ -24,6 +24,7 @@ export default {
     mounted() {
         this.$refs["game-container"].appendChild(this.game)
         renderer.render(game_scene, camera);
+        dadad
     }
 }
 

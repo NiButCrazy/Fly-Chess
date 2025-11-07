@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/飞行棋.iml" filepath="$PROJECT_DIR$/.idea/飞行棋.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nbc-app.iml" filepath="$PROJECT_DIR$/.idea/nbc-app.iml" />
     </modules>
   </component>
 </project>

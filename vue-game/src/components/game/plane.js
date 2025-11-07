@@ -25,6 +25,7 @@ export class Plane {
     constructor() {
         this.model = new THREE.Object3D();
 
+
         // 创建一个客舱
         const geomCockpit = new THREE.BoxGeometry(80, 50, 50);
         const matCockpit = new THREE.MeshPhongMaterial({color: Colors.red, flatShading: true});
