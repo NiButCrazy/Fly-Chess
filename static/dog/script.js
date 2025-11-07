@@ -37,11 +37,11 @@ noButton.addEventListener("click", function() {
     }
 
     // 鍥剧墖鍙樺寲锛堝墠 5 娆″彉鍖栵級
-    if (clickCount === 1) mainImage.src = "../img/小狗1.gif"; // 不要
-    if (clickCount === 2) mainImage.src = "../img/小狗1.gif";   // 不要
-    if (clickCount === 3) mainImage.src = "../img/小狗2.gif";   // 不要
-    if (clickCount === 4) mainImage.src = "../img/小狗2.gif";  // 不要
-    if (clickCount >= 5) mainImage.src = "../img/小狗2.gif";  // 不要
+    if (clickCount === 1) mainImage.src = "../img/dog1.gif"; // 不要
+    if (clickCount === 2) mainImage.src = "../img/dog1.gif";   // 不要
+    if (clickCount === 3) mainImage.src = "../img/dog2.gif";   // 不要
+    if (clickCount === 4) mainImage.src = "../img/dog2.gif";  // 不要
+    if (clickCount >= 5) mainImage.src = "../img/dog2.gif";  // 不要
 
 });
 
@@ -66,7 +66,7 @@ yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">阚小狗愿意和纪小狗做好朋狗吗？( >᎑<)♡︎ᐝ1>
-            <img src="../img/小狗3.gif" alt="!!!小狗你好!! ( >᎑<)♡︎ᐝ" class="yes-image">
+            <img src="../img/dog3.gif" alt="!!!小狗你好!! ( >᎑<)♡︎ᐝ" class="yes-image">
         </div>
     `;
 
